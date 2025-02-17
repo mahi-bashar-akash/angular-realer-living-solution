@@ -1,1 +1,649 @@
-<p>property-details works!</p>
+<div class="h-[30px]"></div>
+
+<section class="w-full">
+
+  <div class="mx-auto lg:max-w-[1000px] xl:max-w-[1400px] py-2 px-5 sm:px-7 sm:py-0">
+
+    <div class="text-[25px] mb-1">
+      Modern Apartment
+    </div>
+
+    <div class="mb-5">
+      <div class="bg-gray-800 rounded px-3 text-[13px] py-2 text-white inline-block">
+        For sale
+      </div>
+    </div>
+
+    <div class="mb-5 flex flex-wrap justify-start items-center text-[14px]">
+
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="bi bi-geo-alt size-[20px] me-2 fill-black">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+        </g>
+      </svg>
+
+      4936 N Broadway St, Chicago, IL 60640, USA
+
+    </div>
+
+    <div class="mb-5">
+
+      <div class="relative">
+
+        <img [src]="'/images/properties-3.jpg'" class="object-cover bg-cover w-full h-[250px] md:h-[300px] lg:h-[700px]" alt="property">
+
+        <div class="static mt-5 lg:mt-0 lg:absolute top-0 bottom-0 start-0 end-0 flex justify-start items-center lg:ps-10">
+          <form class="w-full p-5 bg-white shadow-xl md:w-1/2">
+
+            <div class="mb-3">
+
+              <div class="flex justify-start items-center">
+
+                <div>
+                  <img [src]="'/images/agent-1.jpg'" class="size-[55px] rounded-full object-cover" alt="author">
+                </div>
+
+                <div class="ms-3">
+                  <div class=""> Mike Moore </div>
+                  <div class="text-gray-600 text-[14px]"> {{'mikemoore@gmail.com'}} </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="name" hidden="hidden" class="mb-1 block"> Name </label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" hidden="hidden" class="mb-1 block"> Email </label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" />
+            </div>
+
+            <div class="mb-3">
+              <label for="message" hidden="hidden" class="mb-1 block"> Message </label>
+              <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="5" required autocomplete="off" class="text-[13px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="select" hidden="hidden" class="mb-1 block"> Select purpose </label>
+              <select name="select" id="select" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off">
+                <option value=""> Select </option>
+                <option value=""> I'm a buyer </option>
+                <option value=""> I'm a tenant </option>
+                <option value=""> I'm a agent </option>
+                <option value=""> I'm a other </option>
+              </select>
+            </div>
+
+            <div class="flex flex-wrap">
+              <div class="w-full sm:w-1/2 sm:pe-2 mb-3">
+                <button type="submit" class="uppercase w-full py-2 px-4 border border-blue-600 text-blue-600 duration-500 hover:text-white hover:bg-blue-600 rounded-md">
+                  Send Message
+                </button>
+              </div>
+              <div class="w-full sm:w-1/2 sm:ps-2 mb-3">
+                <button type="button" class="uppercase w-full py-2 px-4 border border-blue-600 text-blue-600 duration-500 hover:text-white hover:bg-blue-600 rounded-md">
+                  Call
+                </button>
+              </div>
+              <div class="w-full">
+                <button type="button" class="uppercase w-full py-2 px-4 border border-blue-600 text-blue-600 duration-500 hover:text-white hover:bg-blue-600 rounded-md group">
+                  <span class="flex justify-center items-center">
+                    <svg class="fill-blue-500 duration-500 group-hover:fill-white size-[17px]" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M17,0C8.7,0,2,6.7,2,15c0,3.4,1.1,6.6,3.2,9.2l-2.1,6.4c-0.1,0.4,0,0.8,0.3,1.1C3.5,31.9,3.8,32,4,32c0.1,0,0.3,0,0.4-0.1 l6.9-3.1C13.1,29.6,15,30,17,30c8.3,0,15-6.7,15-15S25.3,0,17,0z M25.7,20.5c-0.4,1.2-1.9,2.2-3.2,2.4C22.2,23,21.9,23,21.5,23 c-0.8,0-2-0.2-4.1-1.1c-2.4-1-4.8-3.1-6.7-5.8L10.7,16C10.1,15.1,9,13.4,9,11.6c0-2.2,1.1-3.3,1.5-3.8c0.5-0.5,1.2-0.8,2-0.8 c0.2,0,0.3,0,0.5,0c0.7,0,1.2,0.2,1.7,1.2l0.4,0.8c0.3,0.8,0.7,1.7,0.8,1.8c0.3,0.6,0.3,1.1,0,1.6c-0.1,0.3-0.3,0.5-0.5,0.7 c-0.1,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.1,0.1-0.2,0.2c0.3,0.5,0.9,1.4,1.7,2.1c1.2,1.1,2.1,1.4,2.6,1.6l0,0c0.2-0.2,0.4-0.6,0.7-0.9 l0.1-0.2c0.5-0.7,1.3-0.9,2.1-0.6c0.4,0.2,2.6,1.2,2.6,1.2l0.2,0.1c0.3,0.2,0.7,0.3,0.9,0.7C26.2,18.5,25.9,19.8,25.7,20.5z"></path>
+                      </g>
+                    </svg>
+                    <span class="ms-2">
+                      WhatsApp
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-[20px] my-5">
+      Overview
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="w-full flex flex-wrap">
+      <div class="w-full sm:w-1/2 mb-5">
+        <div class="text-black font-medium"> Apartment </div>
+        <div class="text-gray-500"> Property Type </div>
+      </div>
+      <div class="w-full sm:w-1/2 mb-5">
+
+        <!-- bed count -->
+        <div class="flex justify-start items-center">
+
+          <svg class="fill-black size-[15px]" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M5 10C3.355469 10 2 11.355469 2 13L2 28.1875C2.003906 28.25 2.015625 28.3125 2.03125 28.375C2.03125 28.386719 2.03125 28.394531 2.03125 28.40625C1.582031 29.113281 1.214844 29.867188 0.9375 30.6875C0.316406 32.519531 0.0507813 34.621094 0 37L0 38C0 38.03125 0 38.0625 0 38.09375L0 50L7 50L7 46C7 45.167969 7.203125 44.734375 7.46875 44.46875C7.734375 44.203125 8.167969 44 9 44L41 44C41.832031 44 42.265625 44.203125 42.53125 44.46875C42.796875 44.734375 43 45.167969 43 46L43 50L50 50L50 38.15625C50.003906 38.105469 50.003906 38.050781 50 38C50 37.65625 50.007813 37.332031 50 37C49.949219 34.621094 49.683594 32.519531 49.0625 30.6875C48.785156 29.875 48.414063 29.136719 47.96875 28.4375C47.988281 28.355469 48 28.273438 48 28.1875L48 13C48 11.355469 46.644531 10 45 10 Z M 5 12L45 12C45.5625 12 46 12.4375 46 13L46 26.15625C45.753906 25.949219 45.492188 25.75 45.21875 25.5625C44.550781 25.101563 43.824219 24.671875 43 24.3125L43 20C43 19.296875 42.539063 18.75 42.03125 18.40625C41.523438 18.0625 40.902344 17.824219 40.125 17.625C38.570313 17.226563 36.386719 17 33.5 17C30.613281 17 28.429688 17.226563 26.875 17.625C26.117188 17.820313 25.5 18.042969 25 18.375C24.5 18.042969 23.882813 17.820313 23.125 17.625C21.570313 17.226563 19.386719 17 16.5 17C13.613281 17 11.429688 17.226563 9.875 17.625C9.097656 17.824219 8.476563 18.0625 7.96875 18.40625C7.460938 18.75 7 19.296875 7 20L7 24.3125C6.175781 24.671875 5.449219 25.101563 4.78125 25.5625C4.507813 25.75 4.246094 25.949219 4 26.15625L4 13C4 12.4375 4.4375 12 5 12 Z M 16.5 19C19.28125 19 21.34375 19.234375 22.625 19.5625C23.265625 19.726563 23.707031 19.925781 23.90625 20.0625C23.988281 20.117188 23.992188 20.125 24 20.125L24 22C17.425781 22.042969 12.558594 22.535156 9 23.625L9 20.125C9.007813 20.125 9.011719 20.117188 9.09375 20.0625C9.292969 19.925781 9.734375 19.726563 10.375 19.5625C11.65625 19.234375 13.71875 19 16.5 19 Z M 33.5 19C36.28125 19 38.34375 19.234375 39.625 19.5625C40.265625 19.726563 40.707031 19.925781 40.90625 20.0625C40.988281 20.117188 40.992188 20.125 41 20.125L41 23.625C37.441406 22.535156 32.574219 22.042969 26 22L26 20.125C26.007813 20.125 26.011719 20.117188 26.09375 20.0625C26.292969 19.925781 26.734375 19.726563 27.375 19.5625C28.65625 19.234375 30.71875 19 33.5 19 Z M 24.8125 24C24.917969 24.015625 25.019531 24.015625 25.125 24C25.15625 24 25.1875 24 25.21875 24C35.226563 24.015625 41.007813 25.0625 44.09375 27.1875C45.648438 28.257813 46.589844 29.585938 47.1875 31.34375C47.707031 32.875 47.917969 34.761719 47.96875 37L2.03125 37C2.082031 34.761719 2.292969 32.875 2.8125 31.34375C3.410156 29.585938 4.351563 28.257813 5.90625 27.1875C8.992188 25.058594 14.785156 24.011719 24.8125 24 Z M 2 39L48 39L48 48L45 48L45 46C45 44.832031 44.703125 43.765625 43.96875 43.03125C43.234375 42.296875 42.167969 42 41 42L9 42C7.832031 42 6.765625 42.296875 6.03125 43.03125C5.296875 43.765625 5 44.832031 5 46L5 48L2 48Z"></path>
+            </g>
+          </svg>
+
+          <span class="ms-2"> 2 </span>
+        </div>
+
+        <div class="text-gray-500"> Bedroom </div>
+
+      </div>
+      <div class="w-full sm:w-1/2 mb-5">
+
+        <!-- bath count -->
+        <div class="flex justify-start items-center">
+
+          <svg viewBox="0 0 45 45" class="size-[15px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M27.7812 11.002V9.002C27.7812 7.897 26.8863 7.002 25.7812 7.002H14.7812C13.6762 7.002 12.7812 7.897 12.7812 9.002V36.002" stroke-width="2"></path>
+              <path class="stroke-black" d="M33.7812 11.002H21.7812V15.002H33.7812V11.002Z" stroke-width="2" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M18.7812 15.002H36.7812" stroke-width="2" stroke-linejoin="round"></path>
+              <path class="fill-black" d="M27.7812 18.002C27.2292 18.002 26.7812 18.45 26.7812 19.002C26.7812 19.554 27.2292 20.002 27.7812 20.002C28.3333 20.002 28.7812 19.554 28.7812 19.002C28.7812 18.45 28.3333 18.002 27.7812 18.002ZM22.7812 18.002C22.2293 18.002 21.7812 18.45 21.7812 19.002C21.7812 19.554 22.2293 20.002 22.7812 20.002C23.3333 20.002 23.7812 19.554 23.7812 19.002C23.7812 18.45 23.3333 18.002 22.7812 18.002ZM32.7812 18.002C32.2292 18.002 31.7812 18.45 31.7812 19.002C31.7812 19.554 32.2292 20.002 32.7812 20.002C33.3333 20.002 33.7812 19.554 33.7812 19.002C33.7812 18.45 33.3333 18.002 32.7812 18.002ZM27.7812 22.002C27.2292 22.002 26.7812 22.45 26.7812 23.002C26.7812 23.554 27.2292 24.002 27.7812 24.002C28.3333 24.002 28.7812 23.554 28.7812 23.002C28.7812 22.45 28.3333 22.002 27.7812 22.002ZM32.7812 22.002C32.2292 22.002 31.7812 22.45 31.7812 23.002C31.7812 23.554 32.2292 24.002 32.7812 24.002C33.3333 24.002 33.7812 23.554 33.7812 23.002C33.7812 22.45 33.3333 22.002 32.7812 22.002ZM22.7812 22.002C22.2293 22.002 21.7812 22.45 21.7812 23.002C21.7812 23.554 22.2293 24.002 22.7812 24.002C23.3333 24.002 23.7812 23.554 23.7812 23.002C23.7812 22.45 23.3333 22.002 22.7812 22.002ZM27.7812 26.002C27.2292 26.002 26.7812 26.45 26.7812 27.002C26.7812 27.554 27.2292 28.002 27.7812 28.002C28.3333 28.002 28.7812 27.554 28.7812 27.002C28.7812 26.45 28.3333 26.002 27.7812 26.002ZM32.7812 26.002C32.2292 26.002 31.7812 26.45 31.7812 27.002C31.7812 27.554 32.2292 28.002 32.7812 28.002C33.3333 28.002 33.7812 27.554 33.7812 27.002C33.7812 26.45 33.3333 26.002 32.7812 26.002ZM22.7812 26.002C22.2293 26.002 21.7812 26.45 21.7812 27.002C21.7812 27.554 22.2293 28.002 22.7812 28.002C23.3333 28.002 23.7812 27.554 23.7812 27.002C23.7812 26.45 23.3333 26.002 22.7812 26.002ZM27.7812 30.002C27.2292 30.002 26.7812 30.45 26.7812 31.002C26.7812 31.554 27.2292 32.002 27.7812 32.002C28.3333 32.002 28.7812 31.554 28.7812 31.002C28.7812 30.45 28.3333 30.002 27.7812 30.002ZM32.7812 30.002C32.2292 30.002 31.7812 30.45 31.7812 31.002C31.7812 31.554 32.2292 32.002 32.7812 32.002C33.3333 32.002 33.7812 31.554 33.7812 31.002C33.7812 30.45 33.3333 30.002 32.7812 30.002ZM22.7812 30.002C22.2293 30.002 21.7812 30.45 21.7812 31.002C21.7812 31.554 22.2293 32.002 22.7812 32.002C23.3333 32.002 23.7812 31.554 23.7812 31.002C23.7812 30.45 23.3333 30.002 22.7812 30.002ZM27.7812 34.002C27.2292 34.002 26.7812 34.45 26.7812 35.002C26.7812 35.554 27.2292 36.002 27.7812 36.002C28.3333 36.002 28.7812 35.554 28.7812 35.002C28.7812 34.45 28.3333 34.002 27.7812 34.002ZM32.7812 34.002C32.2292 34.002 31.7812 34.45 31.7812 35.002C31.7812 35.554 32.2292 36.002 32.7812 36.002C33.3333 36.002 33.7812 35.554 33.7812 35.002C33.7812 34.45 33.3333 34.002 32.7812 34.002ZM22.7812 34.002C22.2293 34.002 21.7812 34.45 21.7812 35.002C21.7812 35.554 22.2293 36.002 22.7812 36.002C23.3333 36.002 23.7812 35.554 23.7812 35.002C23.7812 34.45 23.3333 34.002 22.7812 34.002Z" fill="#3C3C3C"></path> <path d="M32.7812 18.002C32.2292 18.002 31.7812 18.45 31.7812 19.002C31.7812 19.554 32.2292 20.002 32.7812 20.002C33.3333 20.002 33.7812 19.554 33.7812 19.002C33.7812 18.45 33.3333 18.002 32.7812 18.002ZM27.7812 18.002C27.2293 18.002 26.7812 18.45 26.7812 19.002C26.7812 19.554 27.2293 20.002 27.7812 20.002C28.3333 20.002 28.7812 19.554 28.7812 19.002C28.7812 18.45 28.3333 18.002 27.7812 18.002ZM32.7812 22.002C32.2292 22.002 31.7812 22.45 31.7812 23.002C31.7812 23.554 32.2292 24.002 32.7812 24.002C33.3333 24.002 33.7812 23.554 33.7812 23.002C33.7812 22.45 33.3333 22.002 32.7812 22.002ZM27.7812 22.002C27.2293 22.002 26.7812 22.45 26.7812 23.002C26.7812 23.554 27.2293 24.002 27.7812 24.002C28.3333 24.002 28.7812 23.554 28.7812 23.002C28.7812 22.45 28.3333 22.002 27.7812 22.002ZM32.7812 26.002C32.2292 26.002 31.7812 26.45 31.7812 27.002C31.7812 27.554 32.2292 28.002 32.7812 28.002C33.3333 28.002 33.7812 27.554 33.7812 27.002C33.7812 26.45 33.3333 26.002 32.7812 26.002ZM27.7812 26.002C27.2293 26.002 26.7812 26.45 26.7812 27.002C26.7812 27.554 27.2293 28.002 27.7812 28.002C28.3333 28.002 28.7812 27.554 28.7812 27.002C28.7812 26.45 28.3333 26.002 27.7812 26.002ZM32.7812 30.002C32.2292 30.002 31.7812 30.45 31.7812 31.002C31.7812 31.554 32.2292 32.002 32.7812 32.002C33.3333 32.002 33.7812 31.554 33.7812 31.002C33.7812 30.45 33.3333 30.002 32.7812 30.002ZM27.7812 30.002C27.2293 30.002 26.7812 30.45 26.7812 31.002C26.7812 31.554 27.2293 32.002 27.7812 32.002C28.3333 32.002 28.7812 31.554 28.7812 31.002C28.7812 30.45 28.3333 30.002 27.7812 30.002ZM32.7812 34.002C32.2292 34.002 31.7812 34.45 31.7812 35.002C31.7812 35.554 32.2292 36.002 32.7812 36.002C33.3333 36.002 33.7812 35.554 33.7812 35.002C33.7812 34.45 33.3333 34.002 32.7812 34.002ZM27.7812 34.002C27.2293 34.002 26.7812 34.45 26.7812 35.002C26.7812 35.554 27.2293 36.002 27.7812 36.002C28.3333 36.002 28.7812 35.554 28.7812 35.002C28.7812 34.45 28.3333 34.002 27.7812 34.002Z"></path>
+            </g>
+          </svg>
+
+          <span class="ms-2"> 2 </span>
+        </div>
+
+        <div class="text-gray-500"> Bathroom </div>
+
+      </div>
+      <div class="w-full sm:w-1/2 mb-5">
+
+        <!-- sq ft count -->
+        <div class="flex justify-start items-center">
+          <svg class="fill-black size-[15px]" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path d="M285.491,1.703c-4.467-1.284-9.238,0.551-11.699,4.49L101.994,281.069c-2.006,3.209-2.112,7.255-0.276,10.565 c1.834,3.311,5.321,5.365,9.105,5.365h171.798c5.75,0,10.412-4.662,10.412-10.412V11.712 C293.033,7.067,289.956,2.983,285.491,1.703z M272.209,276.176h-13.535v-6.768c0-5.75-4.662-10.412-10.412-10.412 s-10.412,4.662-10.412,10.412v6.768h-24.988v-6.768c0-5.75-4.662-10.412-10.412-10.412s-10.412,4.662-10.412,10.412v6.768h-24.989 v-6.768c0-5.75-4.661-10.412-10.411-10.412s-10.412,4.662-10.412,10.412v6.768H129.61L272.209,48.017V276.176z"></path>
+                <path d="M193.635,243.53h40.535c5.75,0,10.412-4.661,10.412-10.411V168.26c0-4.645-3.077-8.729-7.542-10.009 c-4.469-1.284-9.237,0.552-11.7,4.49l-40.535,64.859c-2.005,3.21-2.112,7.255-0.276,10.565 C186.362,241.477,189.849,243.53,193.635,243.53z M223.758,204.565v18.142H212.42L223.758,204.565z"></path>
+                <path d="M217.984,44.632c3.024-4.89,1.517-11.303-3.37-14.331l-46.387-28.74c-2.349-1.453-5.18-1.916-7.866-1.285 c-2.689,0.633-5.018,2.308-6.472,4.656l-4.371,7.063c-20.907-10.192-44.484-12.863-67.43-7.462 c-26.352,6.201-48.715,22.299-62.967,45.328C-8.446,94.412,2.747,152.213,43.364,183.531l-4.377,7.074 c-3.024,4.888-1.517,11.302,3.369,14.33l46.386,28.745c1.66,1.029,3.562,1.563,5.484,1.563c0.796,0,1.596-0.092,2.384-0.277 c2.689-0.632,5.017-2.307,6.471-4.656L217.984,44.632z M36.83,60.82c11.324-18.299,29.092-31.09,50.03-36.018 c17.521-4.122,35.5-2.303,51.618,5.033l-16.061,25.953c-9.116-3.315-19.003-3.928-28.668-1.651 C80.637,57.222,69.512,65.231,62.418,76.69c-12.755,20.615-8.822,46.932,8.05,63.046L54.41,165.684 C23.526,140.51,15.311,95.594,36.83,60.82z M81.853,121.338c-7.299-9.497-8.393-22.919-1.727-33.689 c4.163-6.728,10.695-11.431,18.393-13.241c4.179-0.984,8.43-1.043,12.52-0.23L81.853,121.338z M90.854,210.492l-28.684-17.775 L166.116,24.749l28.685,17.773l-8.193,13.241l-6.606-4.094c-4.889-3.03-11.306-1.522-14.334,3.365 c-3.029,4.888-1.523,11.306,3.365,14.335l6.617,4.101l-14.576,23.553l-6.607-4.093c-4.89-3.027-11.307-1.521-14.335,3.367 c-3.028,4.888-1.522,11.306,3.367,14.335l6.616,4.1l-14.574,23.553l-6.607-4.094c-4.889-3.026-11.307-1.52-14.335,3.368 c-3.027,4.889-1.521,11.306,3.368,14.334l6.616,4.1l-14.576,23.552l-6.604-4.094c-4.889-3.03-11.307-1.523-14.336,3.364 c-3.029,4.888-1.523,11.306,3.364,14.336l6.617,4.102L90.854,210.492z"></path>
+              </g>
+            </g>
+          </svg>
+          <span class="ms-2"> 1560 </span>
+        </div>
+
+        <div class="text-gray-500"> Sq Ft </div>
+
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/3 mb-5">
+
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/3 mb-5">
+
+      </div>
+    </div>
+
+    <div class="text-[20px] my-5">
+      Description
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="text-gray-500 mb-5 text-[13px]">
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+      <br><br>
+
+      Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+
+    </div>
+
+    <div class="text-[20px] my-5">
+      Details
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:grid-cols-4 bg-gray-200 p-5">
+      <div class="text-start font-medium"> Property ID: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> hz-HZ27 </div>
+      <div class="text-start font-medium"> Price: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> $97,000 </div>
+      <div class="text-start font-medium"> Property Size: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 1560 Sq Ft </div>
+      <div class="text-start font-medium"> Bedroom: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 1 </div>
+      <div class="text-start font-medium"> Bathrooms: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 2 </div>
+      <div class="text-start font-medium"> Garage: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 1 </div>
+      <div class="text-start font-medium"> Garage Size: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 200 SqFt </div>
+      <div class="text-start font-medium"> Year Built: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 2016 </div>
+      <div class="text-start font-medium"> Property Type: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Apartment </div>
+      <div class="text-start font-medium"> Property Status: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> For Sale </div>
+    </div>
+
+    <br><br>
+
+    <div class="text-[20px] my-5">
+      Additional details
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:grid-cols-4 bg-gray-200 p-5">
+      <div class="text-start font-medium"> Deposit: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 20% </div>
+      <div class="text-start font-medium"> Amenities: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Clubhouse </div>
+      <div class="text-start font-medium"> Pool Size: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 300 Sqft </div>
+      <div class="text-start font-medium"> Additional Rooms: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Guest Bath </div>
+      <div class="text-start font-medium"> Last remodel year: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 1987 </div>
+      <div class="text-start font-medium"> Equipment: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Grill - Gas </div>
+    </div>
+
+    <br><br>
+
+    <div class="text-[20px] my-5">
+      Address
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:grid-cols-4 bg-gray-200 p-5">
+      <div class="text-start font-medium"> Address: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 4936 N Broadway St </div>
+      <div class="text-start font-medium"> Zip/Postal Code: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> 60640 </div>
+      <div class="text-start font-medium"> City: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Chicago </div>
+      <div class="text-start font-medium"> Area: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Andersonville </div>
+      <div class="text-start font-medium"> State/county: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> Illinois, New York </div>
+      <div class="text-start font-medium"> Country: </div>
+      <div class="text-start sm:text-end text-gray-800 text-[14px]"> United States </div>
+    </div>
+
+    <br><br>
+
+    <div class="text-[20px] my-5">
+      Mortgage Calculator
+    </div>
+
+    <div class="flex flex-wrap w-full">
+      <div class="w-full md:w-1/2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="text-start font-medium"> Down Payment </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $14,550.00 </div>
+          <div class="text-start font-medium"> Loan Amount </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $82,450.00 </div>
+          <div class="text-start font-medium"> Monthly Mortgage Payment </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $589.42 </div>
+          <div class="text-start font-medium"> Property Tax </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $97.00 </div>
+          <div class="text-start font-medium"> Home Insurance </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $16.67 </div>
+          <div class="text-start font-medium"> PMI </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $68.71 </div>
+          <div class="text-start font-medium"> Monthly HOA Fees </div>
+          <div class="text-start sm:text-end text-gray-800 text-[14px]"> $250.00 </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <form class="w-full flex flex-wrap">
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="total-amount" class="block mb-1"> Total Amount </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            $
+          </div>
+          <input type="text" id="total-amount" name="total-amount" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="97000">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="down-payment" class="block mb-1"> Down Payment </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            %
+          </div>
+          <input type="text" id="down-payment" name="down-payment" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="15">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="interest-rate" class="block mb-1"> Interest Rate </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            %
+          </div>
+          <input type="text" id="interest-rate" name="interest-rate" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="3.5">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="loan-terms" class="block mb-1"> Loan Terms (Years) </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] flex justify-center items-center py-2 border border-gray-300 text-gray-500 me-1">
+            <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path class="stroke-gray-500" d="M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+          </div>
+          <input type="text" id="loan-terms" name="loan-terms" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="15">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="property-tax" class="block mb-1"> Property Tax </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            %
+          </div>
+          <input type="text" id="property-tax" name="property-tax" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="1.2">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="home-insurance" class="block mb-1"> Home Insurance </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            $
+          </div>
+          <input type="text" id="home-insurance" name="home-insurance" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="200">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="monthly-HOA-fees" class="block mb-1"> Monthly HOA Fees </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            $
+          </div>
+          <input type="text" id="monthly-HOA-fees" name="monthly-HOA-fees" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="250">
+        </div>
+      </div>
+
+      <div class="p-1 w-full sm:w-1/2 md:w-1/3">
+        <label for="PMI" class="block mb-1"> PMI </label>
+        <div class="flex justify-start items-center">
+          <div class="rounded-md min-w-[45px] text-center py-2 border border-gray-300 text-gray-500 me-1">
+            %
+          </div>
+          <input type="text" id="PMI" name="PMI" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" value="1">
+        </div>
+      </div>
+
+    </form>
+
+    <br><br>
+
+    <div class="text-[20px] my-5">
+      Features
+    </div>
+
+    <div class="border-b-2 border-b-gray-200 w-full mb-5"></div>
+
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Air Conditioning
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Barbeque
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Dryer
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Gym
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Laundry
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Lawn
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Microwave
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Outdoor Shower
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Refrigerator
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Sauna
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Swimming Pool
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        TV Cable
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Washer
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        WiFi
+      </div>
+      <div class="flex justify-start items-center">
+        <div class="me-2">
+          <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path class="stroke-black" d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path class="stroke-black" d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        Window Coverings
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="text-[25px] mb-5"> Leave a comments </div>
+
+    <form class="w-full flex flex-wrap p-5 sm:p-10 border border-gray-300 rounded-lg">
+
+      <div class="w-full sm:w-1/2 sm:pe-3 mb-3">
+        <label for="blog-name" class="block mb-1 w-full">Name</label>
+        <input type="text" id="blog-name" name="name" placeholder="Enter yor name" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" />
+      </div>
+
+      <div class="w-full sm:w-1/2 mb-3">
+        <label for="blog-email" class="block mb-1 w-full">Email</label>
+        <input type="email" id="blog-email" name="email" placeholder="Enter your email" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" required autocomplete="off" />
+      </div>
+
+      <div class="w-full mb-3">
+        <label for="blog-message" class="block mb-1 w-full">Message</label>
+        <textarea name="message" id="blog-message" placeholder="Enter your message" class="text-[13px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 px-3 py-2" cols="30" rows="10" required autocomplete="off"></textarea>
+      </div>
+
+      <button type="submit" class="uppercase py-2 px-4 text-white bg-blue-600 duration-500 hover:bg-blue-900 rounded-md">
+        submit
+      </button>
+
+    </form>
+
+    <br><br>
+
+  </div>
+
+</section>
