@@ -70,13 +70,13 @@
           Team
         </a>
 
-        <a [routerLink]="['/sign-in']" class="decoration-0 px-2 py-1 block lg:inline-block"
+        <a [routerLink]="['/auth/sign-in']" class="decoration-0 px-2 py-1 block lg:inline-block"
            [ngClass]="{'text-black' : currentRoute !== '/sign-in', 'text-blue-500' : currentRoute === '/sign-in' }"
            (click)="navbarToggle()">
           SignIn
         </a>
 
-        <a [routerLink]="['/Sign-up']" class="decoration-0 px-2 py-1 block lg:inline-block"
+        <a [routerLink]="['/auth/sign-up']" class="decoration-0 px-2 py-1 block lg:inline-block"
            [ngClass]="{'text-black' : currentRoute !== '/signup', 'text-blue-500' : currentRoute === '/Sign-up' }"
            (click)="navbarToggle()">
           SignUp
