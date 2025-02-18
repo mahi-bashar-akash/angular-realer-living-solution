@@ -70,6 +70,12 @@
           Team
         </a>
 
+        <a [routerLink]="['/blogs']" class="decoration-0 px-2 py-1 block lg:inline-block"
+           [ngClass]="{'text-black' : currentRoute !== '/blogs', 'text-blue-500' : currentRoute === '/blogs' }"
+           (click)="navbarToggle()">
+          Blogs
+        </a>
+
         <a [routerLink]="['/auth/sign-in']" class="decoration-0 px-2 py-1 block lg:inline-block"
            [ngClass]="{'text-black' : currentRoute !== '/sign-in', 'text-blue-500' : currentRoute === '/sign-in' }"
            (click)="navbarToggle()">

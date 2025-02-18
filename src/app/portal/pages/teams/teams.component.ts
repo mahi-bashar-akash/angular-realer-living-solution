@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 @Component({
-  selector: 'app-team',
+  selector: 'app-teams',
   imports: [
     RouterLink
   ],
-  templateUrl: './team.component.html',
-  styleUrl: './team.component.css'
+  templateUrl: './teams.component.html',
+  styleUrl: './teams.component.css'
 })
-export class TeamComponent {
+export class TeamsComponent {
 
 }

@@ -1,0 +1,572 @@
+<div class="h-[30px]"></div>
+
+<section class="w-full py-16">
+  <div class="mx-auto lg:max-w-[1000px] xl:max-w-[1400px] py-2 sm:px-7 sm:py-0">
+
+    <div class="flex flex-wrap px-5 lg:px-0">
+
+      <div class="w-full pb-16 lg:w-2/3 lg:pe-3 order-2 lg:order-1">
+
+        <div class="w-full flex flex-wrap">
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/place-1.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/place-2.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/place-3.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/place-4.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/place-5.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+          <!-- Blog card -->
+          <div class="w-full sm:w-1/2 lg:w-1/2 p-2 group">
+            <a [routerLink]="['/blog-details',1]" class="decoration-0 block border duration-500 hover:shadow-xl">
+
+              <!-- Blog card image -->
+              <div class="overflow-hidden">
+                <img [src]="'/images/properties-1.jpg'" class="w-full h-[200px] object-cover bg-cover duration-500 scale-100 group-hover:scale-125" alt="blog" />
+              </div>
+
+              <!-- Blog card date and tag -->
+              <div class="mt-5 flex justify-between items-center px-4">
+                <div class="text-[12px] flex justify-start items-center font-medium">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-black" d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> March 9, 2016 </span>
+                </div>
+                <div class="text-[12px] flex justify-start items-center font-medium text-blue-500">
+                  <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path class="stroke-blue-500" d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                  <span class="ms-2"> Business </span>
+                </div>
+              </div>
+
+              <!-- Blog card title -->
+              <div class="mt-5 px-5">
+                <div class="truncate-to-1-line">
+                  Why We Love Real Estate
+                </div>
+              </div>
+
+              <!-- Blog card description -->
+              <div class="my-5 px-5 text-[13px] text-gray-500">
+                <div class="truncate-to-2-line">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin
+                </div>
+              </div>
+
+              <div class="border-b border-b-gray-300 w-full"></div>
+
+              <!-- Blog author information -->
+              <div class="py-3 px-2 text-gray-500 text-[13px] flex justify-start items-center">
+                <svg class="fill-gray-500 size-[21px] me-2" viewBox="-6.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>user</title>
+                    <path d="M18.88 21.76c-0.12-0.6-0.32-1.2-0.56-1.76-0.88-2.080-2.48-3.8-4.44-4.8 0.56-0.84 0.88-1.84 0.88-2.92 0-2.92-2.36-5.28-5.28-5.28s-5.28 2.36-5.28 5.28c0 1.080 0.32 2.080 0.88 2.92-2.6 1.32-4.44 3.72-5.040 6.52-0.16 0.8 0.040 1.6 0.52 2.24 0.52 0.64 1.28 1 2.080 1h13.64c0.8 0 1.56-0.36 2.080-1 0.52-0.6 0.72-1.4 0.52-2.2zM9.44 8.68c2 0 3.6 1.64 3.6 3.6s-1.64 3.6-3.6 3.6c-2 0-3.6-1.64-3.6-3.6s1.64-3.6 3.6-3.6zM17.040 22.96c-0.2 0.24-0.48 0.36-0.76 0.36h-13.64c-0.32 0-0.6-0.12-0.76-0.36-0.2-0.24-0.28-0.56-0.2-0.84 0.52-2.44 2.2-4.52 4.48-5.6 0.040 0 0.040-0.040 0.080-0.040 0.88 0.68 2 1.12 3.2 1.12s2.32-0.4 3.24-1.12c0.040 0 0.040 0.040 0.080 0.040 1.8 0.84 3.24 2.28 4 4.12 0.2 0.48 0.36 0.96 0.48 1.48 0.080 0.24 0 0.6-0.2 0.84z"></path>
+                  </g>
+                </svg>
+                by Mike Moore
+              </div>
+
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="my-10 flex justify-center items-center gap-x-2">
+          <a href="javascript:void(0)" class="size-[35px] text-[13px] text-gray-500 duration-500 hover:bg-blue-700 font-medium hover:text-white flex justify-center items-center rounded-full shadow-[0_0_3px_0_#888888]">
+            1
+          </a>
+          <a href="javascript:void(0)" class="size-[35px] text-[13px] text-gray-500 duration-500 hover:bg-blue-700 font-medium hover:text-white flex justify-center items-center rounded-full shadow-[0_0_3px_0_#888888]">
+            2
+          </a>
+          <a href="javascript:void(0)" class="size-[35px] text-[13px] text-gray-500 duration-500 hover:bg-blue-700 font-medium hover:text-white flex justify-center items-center rounded-full shadow-[0_0_3px_0_#888888]">
+            3
+          </a>
+          <a href="javascript:void(0)" class="size-[35px] text-[13px] text-gray-500 duration-500 hover:bg-blue-700 font-medium hover:text-white flex justify-center items-center rounded-full shadow-[0_0_3px_0_#888888]">
+            4
+          </a>
+          <a href="javascript:void(0)" class="size-[35px] text-[13px] text-gray-500 duration-500 hover:bg-blue-700 font-medium hover:text-white flex justify-center items-center rounded-full shadow-[0_0_3px_0_#888888]">
+            5
+          </a>
+        </div>
+
+      </div>
+
+      <div class="w-full pb-16 lg:w-1/3 lg:ps-5 order-1 lg:order-2">
+
+        <!-- Search -->
+        <div class="mb-5">
+          <label for="keyword" hidden="hidden"> keyword </label>
+          <div class="relative w-full">
+            <input type="text" id="keyword" placeholder="Search here..." name="keyword" class="text-[13px] h-[42px] rounded-md w-full outline-0 border border-gray-300 focus-visible:border-blue-900 duration-500 ps-10 pe-3 py-2" required autocomplete="off">
+            <div class="absolute top-0 bottom-0 start-0 flex justify-center items-center ps-2">
+              <svg viewBox="0 0 24 24" class="size-[24px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="stroke-gray-400" d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post Categories -->
+        <div class="mb-5 text-[21px]">
+          Post categories
+        </div>
+
+        <!-- Post category list -->
+        <div class="text-[15px] ps-5">
+          <div class="my-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Apartment
+              </span>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Banglow
+              </span>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Modern Houses
+              </span>
+            </a>
+          </div>
+          <div class="my-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Property
+              </span>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Apartment
+              </span>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a href="javascript:void(0)" class="decoration-0 text-black duration-500 hover:text-blue-600 group flex justify-start items-center">
+              <svg viewBox="0 0 24 24" class="size-[20px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="fill-black duration-500 group-hover:fill-blue-600" fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C8.5 17.4045 8.74364 17.7691 9.11732 17.9239C9.49099 18.0787 9.92111 17.9931 10.2071 17.7071L15.2071 12.7071C15.5976 12.3166 15.5976 11.6834 15.2071 11.2929L10.2071 6.29289C9.92111 6.00689 9.49099 5.92134 9.11732 6.07612C8.74364 6.2309 8.5 6.59554 8.5 7V17Z"></path>
+                </g>
+              </svg>
+              <span class="ms-1">
+                Real Estate
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Popular tags -->
+        <div class="my-5 text-[21px]">
+          Popular Tags
+        </div>
+
+        <!-- Property status list -->
+        <div class="flex flex-wrap justify-start items-start gap-1">
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Apartment
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Buyer
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Innovate
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Luxury
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Modern
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Real estate
+          </a>
+          <a href="javascript:void(0)" class="decoration-0 bg-blue-500 duration-500 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-[13px] whitespace-break-spaces">
+            Sale
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
