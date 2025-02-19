@@ -13,6 +13,7 @@ import { BlogDetailsComponent } from './portal/pages/blog-details/blog-details.c
 import { AuthLayoutComponent } from './auth/layout/layout.component';
 import { SignInComponent } from './auth/pages/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/pages/sign-up/sign-up.component';
+import { ServiceDetailsComponent } from './portal/pages/service-details/service-details.component';
 
 const company_name = 'Realer Living Solution';
 
@@ -21,18 +22,19 @@ export const routes: Routes = [
   { path: '', component: LayoutComponent,
 
     children: [
-      { path: '', component: HomeComponent, title: company_name + ' Home' },
-      { path: 'about', component: AboutComponent, title: company_name + ' About' },
-      { path: 'properties', component: PropertiesComponent, title: company_name + 'Properties' },
-      { path: 'property-details/:id', component: PropertyDetailsComponent, title: company_name + 'Property Details' },
-      { path: 'teams', component: TeamsComponent, title: company_name + 'Teams' },
-      { path: 'team-details/:id', component: TeamDetailsComponent, title: company_name + 'Team Details' },
-      { path: 'blogs', component: BlogsComponent, title: company_name + 'Blogs' },
-      { path: 'blog-details/:id', component: BlogDetailsComponent, title: company_name + 'Blog Details' },
+      { path: '', component: HomeComponent, title: company_name },
+      { path: 'about', component: AboutComponent, title: company_name },
+      { path: 'properties', component: PropertiesComponent, title: company_name },
+      { path: 'property-details/:id', component: PropertyDetailsComponent, title: company_name },
+      { path: 'teams', component: TeamsComponent, title: company_name },
+      { path: 'team-details/:id', component: TeamDetailsComponent, title: company_name },
+      { path: 'blogs', component: BlogsComponent, title: company_name },
+      { path: 'blog-details/:id', component: BlogDetailsComponent, title: company_name },
+      { path: 'service-details/:id', component: ServiceDetailsComponent, title: company_name },
       { path: 'auth', component: AuthLayoutComponent,
         children: [
-          { path: 'sign-in', component: SignInComponent, title: company_name + 'Sign In' },
-          { path: 'sign-up', component: SignUpComponent, title: company_name + 'Sign Up' },
+          { path: 'sign-in', component: SignInComponent, title: company_name },
+          { path: 'sign-up', component: SignUpComponent, title: company_name },
         ],
       },
     ]

@@ -67,7 +67,7 @@
         <a [routerLink]="['/teams']" class="decoration-0 px-2 py-1 block lg:inline-block"
            [ngClass]="{'text-black' : currentRoute !== '/teams', 'text-blue-500' : currentRoute === '/teams' }"
            (click)="navbarToggle()">
-          Team
+          Teams
         </a>
 
         <a [routerLink]="['/blogs']" class="decoration-0 px-2 py-1 block lg:inline-block"
@@ -77,13 +77,13 @@
         </a>
 
         <a [routerLink]="['/auth/sign-in']" class="decoration-0 px-2 py-1 block lg:inline-block"
-           [ngClass]="{'text-black' : currentRoute !== '/sign-in', 'text-blue-500' : currentRoute === '/sign-in' }"
+           [ngClass]="{'text-black' : currentRoute !== '/auth/sign-in', 'text-blue-500' : currentRoute === '/auth/sign-in' }"
            (click)="navbarToggle()">
           SignIn
         </a>
 
         <a [routerLink]="['/auth/sign-up']" class="decoration-0 px-2 py-1 block lg:inline-block"
-           [ngClass]="{'text-black' : currentRoute !== '/signup', 'text-blue-500' : currentRoute === '/Sign-up' }"
+           [ngClass]="{'text-black' : currentRoute !== '/auth/sign-up', 'text-blue-500' : currentRoute === '/auth/sign-up' }"
            (click)="navbarToggle()">
           SignUp
         </a>
